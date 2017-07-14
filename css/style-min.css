@@ -1,0 +1,83 @@
+/* Flexible Slide-to-top Accordion Style*/
+.wrapper, #img-min
+{
+	display: inline-block;
+	margin: 1em auto;
+	vertical-align: top;
+}
+
+.wrapper{
+	margin: 0 3em;
+	margin-right:0; 
+	width:60%;
+	/*max-width:800px;*/
+	/*margin:30px auto;*/
+}
+.st-accordion{
+    width:100%;
+    /*min-width:270px;*/
+    /*margin: 0 auto;*/
+}
+.st-accordion ul li{
+    /*height: 100px;*/
+    border-bottom: 1px solid #DBDBDB;
+    border-top:1px solid #fff;
+    overflow: hidden;
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+    font-family: 'Josefin Slab',Georgia, serif;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 2.2em;
+    display: block;
+	position: relative;
+	text-align: left;
+	/*padding: .3em 0;*/
+    line-height: 55px;
+	/*outline:none;*/
+    -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+}
+
+.st-accordion ul li > a:hover{
+    color: #1693eb;
+}
+.st-accordion ul li > a:hover span{
+	opacity:1;
+	right: 10px;
+}
+.st-accordion ul li.st-open > a{
+    color: #1693eb;
+}
+.st-accordion ul li.st-open > a span{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+    transform:rotate(180deg);
+	right:10px;
+	opacity:1;
+}
+
+.st-arrow
+{
+	font-weight: bold;
+}
+
+.st-content
+{
+	background: #DBDBDB;
+	font-size: 1.1em;
+	padding: 1em;
+	text-align: justify;
+}
+
+
+/*@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:36px;
+	}
+}*/

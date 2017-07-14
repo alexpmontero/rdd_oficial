@@ -1,0 +1,51 @@
+<section id="logoymenu">
+	<div>
+		Informes: (993) 5.90.18.05 - (993) 1.43.06.45
+	</div>
+	<h1>
+		<a id="logomini" href="http://www.rdd.org.mx/"></a>
+	</h1>
+	<nav>
+		<ul>
+		    <li><a class="cambio" href="http://www.rdd.org.mx/" data-seccion="index">INICIO</a></li>
+			<li><a class="cambio" href="vision.html" data-seccion="vision">VISIÓN</a></li>
+			<!-- <li><a class="cambio" href="envivo.html" data-seccion="envivo">EN VIVO</a></li> -->
+			<li><a class="cambio" href="ministerios.html" data-seccion="ministerios">MINISTERIOS</a></li>
+			<li><a class="cambio" href="contactanos.html" data-seccion="contactanos">CONTACTO</a></li>
+		</ul>
+	</nav>
+</section>
+<script>
+	function seccionSeleccionada()
+	{
+		var url = window.location.href;
+		// console.log("estoy en la ruta:",url);
+
+		if(/index.html/.test(url))
+		{
+			$("a[data-seccion='index']").addClass("actual");
+			// console.log("estoy en index");
+		}
+		else if (/vision.html/.test(url))
+		{
+			$("a[data-seccion='vision']").addClass("actual");
+			// console.log("estoy en vision");
+		}
+		else if (/envivo.html/.test(url))
+		{
+			$("a[data-seccion='envivo']").addClass("actual");
+			// console.log("estoy en envivo");
+		}
+		else if (/ministerios.html/.test(url))
+		{
+			$("a[data-seccion='ministerios']").addClass("actual");
+			// console.log("estoy en ministerios");
+		}
+		else if (/contactanos.html/.test(url))
+		{
+			$("a[data-seccion='contactanos']").addClass("actual");
+			// console.log("estoy en contactanos");
+		}
+	}
+	seccionSeleccionada();
+</script>
